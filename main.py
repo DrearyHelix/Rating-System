@@ -2,8 +2,6 @@ import discord
 import os
 from replit import db
 
-import re
-
 from keep_alive import keep_alive
 
 token = os.environ['token']

@@ -1,3 +1,3 @@
 # Rating-System
 
-#Actual Bot
+#Acutal Bot
