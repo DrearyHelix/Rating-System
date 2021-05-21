@@ -26,7 +26,6 @@ def change_user_rating(user, new_rating):
     user_id = []
     user_id = user_id + list(db["user_id"])
     user_index = 0
-    print (str(user_id) + "before change")
     for i in range(len(user_id)):
       if (user_id[i].startswith(user)):
         user_index = i
@@ -55,7 +54,6 @@ def rating_calculator(player1, player2, player1_rating, player2_rating, result):
     player1_rating = int(get_user_rating(player1));
     player2_rating = int(get_user_rating(player2));
     rating_change = round(development_coefficient * (1 - 1/(10**((player1_rating - player2_rating)/400) + 1)));
-    print(rating_change)
     if (result == "win"):
         player1_rating = player1_rating + rating_change
         player2_rating = player2_rating - rating_change
